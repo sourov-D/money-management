@@ -8,13 +8,9 @@ struct wallet{
 
 typedef struct wallet WALLET;
 
-void createWallet(WALLET *,int,char *);
+WALLET *createWallet(int,char *);
 void saveWallet(WALLET *);
-void addBalnace(WALLET *, int);
-
-void addMoney(WALLET *,int);
-int deductMoney(WALLET *,int);
-void freeList(char **);
-
+void addBalance(WALLET *, int);
+void deductBalanace(WALLET *, int);
 
 #endif
