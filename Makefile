@@ -1,14 +1,16 @@
-cc=gcc
-cflags=-c -g
-lflags= -o
-bin=main
-obj=*.o
-cfiles=*.c
+CC=gcc
+CFLAGS=-c -g
+LFLAGS= -o
+BIN=main
+OBJ=*.o
+CFILES=*.c
 
 all:
-	$(cc) $(cflags) $(cfiles)
-	$(cc) $(lflags) $(bin) $(obj)
+	$(CC) $(CFLAGS) $(CFILES)
+	$(CC) $(LFLAGS) $(BIN) $(OBJ)
 	
 clean:
-	rm -f $(obj)
-	rm -f $(bin)
+	rm -f $(OBJ)
+	rm -f $(BIN)
+
+
